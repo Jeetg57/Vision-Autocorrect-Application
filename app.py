@@ -74,11 +74,21 @@ class VisionAutocorrectApp:
         self.labelExample.pack(side=tki.BOTTOM)
 
     def clearPrevPics(self):
-        filepath = "output"
-        for root, dirs, files in os.walk(filepath):
-            for file in files:
-                print(file)
-                os.remove(os.path.join(root, file))
+        # Path
+        path = "output"
+
+        # Check whether the
+        # specified path is an
+        # existing directory or not
+        isdir = os.path.isdir(path)
+        if isdir:
+            filepath = "output"
+            for root, dirs, files in os.walk(filepath):
+                for file in files:
+                    print(file)
+                    os.remove(os.path.join(root, file))
+        else:
+            os.mkdir(path)
 
     def scheduleTaskSnap(self):
         while not self.stopEvent.is_set():
@@ -121,6 +131,7 @@ class VisionAutocorrectApp:
     def takeSnapshot(self):
         # grab the current timestamp and use it to construct the
         # output path
+
         ts = datetime.datetime.now()
         filename = "{}.jpg".format(ts.strftime("%Y-%m-%d_%H-%M-%S"))
         p = os.path.sep.join((self.outputPath, filename))
