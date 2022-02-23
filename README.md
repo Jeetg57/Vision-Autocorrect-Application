@@ -7,9 +7,11 @@
 	2. `python cam.py` or `python cam.py`
 - Wait for application to open
 - Try the following gestures
-	1. Squint
-		[![Squint](squint)](https://www.milwaukeeeyecare.com/wp-content/uploads/mansquintingpic.jpg)
-	2. Glare
-		[![Squint](squint)](https://www.milwaukeeeyecare.com/wp-content/uploads/mansquintingpic.jpg)
-	3. Fatigue
-		[![Squint](squint)](https://www.milwaukeeeyecare.com/wp-content/uploads/mansquintingpic.jpg)
+	1. Squint - Eyes almost shut
+	2. Glare - Eyes wide open
+	3. Fatigue - Hands on face and looking tired
+
+The dataset used for training can be found [here](https://github.com/Jeetg57/VisionAutocorrectDataset)
+
+
+Created by **Jeet Gohil**, **Dr. Leah Mutanu** and **Khushi Gupta**
