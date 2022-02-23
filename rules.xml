@@ -1,0 +1,18 @@
+<rules>
+    <rule category="Squint">
+        <tolerance>5</tolerance>
+        <message>You are squinting, do you want to increase font size?</message>
+        <times>0</times>
+    </rule>
+    <rule category="Glare">
+        <tolerance>5</tolerance>
+        <message>You are glaring, do you want to increase font size?</message>
+        <times>0</times>
+
+    </rule>
+    <rule category="Fatigue">
+        <tolerance>5</tolerance>
+        <message>You are fatigued, we recommend you take a short break</message>
+        <times>0</times>
+    </rule>
+</rules>
