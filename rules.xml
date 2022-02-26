@@ -15,4 +15,14 @@
         <message>You are fatigued, we recommend you take a short break</message>
         <times>0</times>
     </rule>
+    <rule category="None">
+        <tolerance>5</tolerance>
+        <message>You are fatigued, we recommend you take a short break</message>
+        <times>0</times>
+    </rule>
+    <rule category="Normal">
+        <tolerance>5</tolerance>
+        <message>You are fatigued, we recommend you take a short break</message>
+        <times>0</times>
+    </rule>
 </rules>
